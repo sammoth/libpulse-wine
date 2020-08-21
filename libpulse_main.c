@@ -273,7 +273,7 @@ uint32_t __cdecl LIBPULSE_pa_stream_get_monitor_stream(pa_stream * s)
 }
 pa_sample_spec * __cdecl LIBPULSE_pa_stream_get_sample_spec(pa_stream * s)
 {
-  return LIBPULSE_pa_stream_get_sample_spec(s);
+  return pa_stream_get_sample_spec(s);
 }
 pa_stream_state_t __cdecl LIBPULSE_pa_stream_get_state(pa_stream * s)
 {
