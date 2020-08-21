@@ -3,4 +3,4 @@ This repo can be used to build a libpulse-0.dll for use in Wine with the foo_out
 Only the APIs used by the component are implemented, but you could extend this to expose the whole of libpulse.
 
 ## Building
-Make sure the Wine repo has the same version checked out as your own machine and build using build.sh
+Make sure the Wine repo has the same version checked out as your own machine and build using build.sh. You will need to rebuild every time you update Wine.
