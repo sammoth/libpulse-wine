@@ -1,6 +1,6 @@
 # Generated from pulse/libpulse.dll by winedump
 
-
+1 cdecl foo_out_pulse_winelib_dll()
 
 5 cdecl pa_bytes_to_usec( long ptr ) LIBPULSE_pa_bytes_to_usec
 12 cdecl pa_channel_map_init_auto( ptr long long ) LIBPULSE_pa_channel_map_init_auto

@@ -15,6 +15,7 @@
 #include "winnt.h"
 #include "pulseaudio.h"
 
+void foo_out_pulse_winelib_dll();
 
 pa_usec_t __cdecl LIBPULSE_pa_bytes_to_usec(uint64_t length, pa_sample_spec * spec);
 
