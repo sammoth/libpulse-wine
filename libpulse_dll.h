@@ -43,19 +43,7 @@ pa_operation * __cdecl LIBPULSE_pa_context_stat(pa_context * c, pa_stat_info_cb_
 pa_operation * __cdecl LIBPULSE_pa_context_subscribe(pa_context * c, pa_subscription_mask_t m, pa_context_success_cb_t cb, void * userdata);
 void __cdecl LIBPULSE_pa_context_unref(pa_context * c);
 
-int __cdecl LIBPULSE_pa_mainloop_dispatch(pa_mainloop * m);
-void __cdecl LIBPULSE_pa_mainloop_free(pa_mainloop * m);
-pa_mainloop_api * __cdecl LIBPULSE_pa_mainloop_get_api(pa_mainloop * m);
-int __cdecl LIBPULSE_pa_mainloop_get_retval(pa_mainloop * m);
-int __cdecl LIBPULSE_pa_mainloop_iterate(pa_mainloop * m, int block, int * retval);
-pa_mainloop * __cdecl LIBPULSE_pa_mainloop_new(void);
-int __cdecl LIBPULSE_pa_mainloop_poll(pa_mainloop * m);
-int __cdecl LIBPULSE_pa_mainloop_prepare(pa_mainloop * m, int timeout);
-void __cdecl LIBPULSE_pa_mainloop_quit(pa_mainloop * m, int retval);
-int __cdecl LIBPULSE_pa_mainloop_run(pa_mainloop * m, int * retval);
-void __cdecl LIBPULSE_pa_mainloop_set_poll_func(pa_mainloop * m, pa_poll_func poll_func, void * userdata);
-void __cdecl LIBPULSE_pa_mainloop_wakeup(pa_mainloop * m);
-int __cdecl LIBPULSE_pa_msleep(unsigned long t);
+
 void __cdecl LIBPULSE_pa_operation_cancel(pa_operation * o);
 pa_operation_state_t __cdecl LIBPULSE_pa_operation_get_state(pa_operation * o);
 pa_operation * __cdecl LIBPULSE_pa_operation_ref(pa_operation * o);

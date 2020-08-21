@@ -25,7 +25,7 @@ pa_usec_t __cdecl LIBPULSE_pa_bytes_to_usec(uint64_t length, pa_sample_spec * sp
 }
 int __cdecl LIBPULSE_pa_context_connect(pa_context * c, char * server, pa_context_flags_t flags, pa_spawn_api * api)
 {
-  return pa_context_connect(c, server, flags);
+  return pa_context_connect(c, server, flags, api);
 }
 void __cdecl LIBPULSE_pa_context_disconnect(pa_context * c)
 {
@@ -69,7 +69,7 @@ pa_context * __cdecl LIBPULSE_pa_context_new(pa_mainloop_api * mainloop, char * 
 }
 pa_context * __cdecl LIBPULSE_pa_context_new_with_proplist(pa_mainloop_api * mainloop, char * name, pa_proplist * p)
 {
-  return pa_context_with_new_proplist(mainloop, name, p);
+  return pa_context_new_with_proplist(mainloop, name, p);
 }
 pa_operation * __cdecl LIBPULSE_pa_context_proplist_remove(pa_context * c, char * keys, pa_context_success_cb_t cb, void * userdata)
 {
@@ -207,7 +207,7 @@ void __cdecl LIBPULSE_pa_proplist_update(pa_proplist * p, pa_update_mode_t mode,
 {
   pa_proplist_update(p, mode, other);
 }
-int __cdecl LIBPULSE_pa_stream_begin_write(s, void ** data, size_t * nbytes)
+int __cdecl LIBPULSE_pa_stream_begin_write(pa_stream * s, void ** data, size_t * nbytes)
 {
   return pa_stream_begin_write(s, data, nbytes);
 }

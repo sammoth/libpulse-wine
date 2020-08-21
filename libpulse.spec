@@ -39,19 +39,7 @@
 
 
 
-195 cdecl pa_mainloop_dispatch( ptr ) LIBPULSE_pa_mainloop_dispatch
-196 cdecl pa_mainloop_free( ptr ) LIBPULSE_pa_mainloop_free
-197 cdecl pa_mainloop_get_api( ptr ) LIBPULSE_pa_mainloop_get_api
-198 cdecl pa_mainloop_get_retval( ptr ) LIBPULSE_pa_mainloop_get_retval
-199 cdecl pa_mainloop_iterate( ptr long ptr ) LIBPULSE_pa_mainloop_iterate
-200 cdecl pa_mainloop_new() LIBPULSE_pa_mainloop_new
-201 cdecl pa_mainloop_poll( ptr ) LIBPULSE_pa_mainloop_poll
-202 cdecl pa_mainloop_prepare( ptr long ) LIBPULSE_pa_mainloop_prepare
-203 cdecl pa_mainloop_quit( ptr long ) LIBPULSE_pa_mainloop_quit
-204 cdecl pa_mainloop_run( ptr ptr ) LIBPULSE_pa_mainloop_run
-205 cdecl pa_mainloop_set_poll_func( ptr long ptr ) LIBPULSE_pa_mainloop_set_poll_func
-206 cdecl pa_mainloop_wakeup( ptr ) LIBPULSE_pa_mainloop_wakeup
-207 cdecl pa_msleep( long ) LIBPULSE_pa_msleep
+
 208 cdecl pa_operation_cancel( ptr ) LIBPULSE_pa_operation_cancel
 209 cdecl pa_operation_get_state( ptr ) LIBPULSE_pa_operation_get_state
 210 cdecl pa_operation_ref( ptr ) LIBPULSE_pa_operation_ref
