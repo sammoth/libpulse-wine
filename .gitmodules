@@ -1,0 +1,6 @@
+[submodule "wine"]
+	path = wine
+	url = git://source.winehq.org/git/wine.git
+[submodule "pulseaudio"]
+	path = pulseaudio
+	url = https://gitlab.freedesktop.org/pulseaudio/pulseaudio.git
