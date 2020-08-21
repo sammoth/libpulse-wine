@@ -3,7 +3,7 @@
 
 
 5 cdecl pa_bytes_to_usec( long ptr ) LIBPULSE_pa_bytes_to_usec
-
+12 cdecl pa_channel_map_init_auto( ptr long long ) LIBPULSE_pa_channel_map_init_auto
 
 27 cdecl pa_context_connect( ptr str long ptr ) LIBPULSE_pa_context_connect
 28 cdecl pa_context_disconnect( ptr ) LIBPULSE_pa_context_disconnect

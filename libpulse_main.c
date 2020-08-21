@@ -23,6 +23,10 @@ pa_usec_t __cdecl LIBPULSE_pa_bytes_to_usec(uint64_t length, pa_sample_spec * sp
 {
   return pa_bytes_to_usec(length, spec);
 }
+pa_channel_map * __cdecl LIBPULSE_pa_channel_map_init_auto(pa_channel_map * m, unsigned channels arg1, pa_channel_map_def_t def)
+{
+	return pa_channel_map_init_auto(m, arg1, def);
+}
 int __cdecl LIBPULSE_pa_context_connect(pa_context * c, char * server, pa_context_flags_t flags, pa_spawn_api * api)
 {
   return pa_context_connect(c, server, flags, api);
