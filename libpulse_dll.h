@@ -18,7 +18,7 @@
 
 pa_usec_t __cdecl LIBPULSE_pa_bytes_to_usec(uint64_t length, pa_sample_spec * spec);
 
-pa_channel_map * __cdecl LIBPULSE_pa_channel_map_init_auto(pa_channel_map * m, unsigned channels arg1, pa_channel_map_def_t def);
+pa_channel_map * __cdecl LIBPULSE_pa_channel_map_init_auto(pa_channel_map * m, unsigned channels, pa_channel_map_def_t def);
 
 int __cdecl LIBPULSE_pa_context_connect(pa_context * c, char * server, pa_context_flags_t flags, pa_spawn_api * api);
 void __cdecl LIBPULSE_pa_context_disconnect(pa_context * c);
